@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>UiKit
+    </title>
+    <link rel="stylesheet" href="css/main.css?v=1605287016721">
+  </head>
+  <body>
+    <div class="page">
+      <main class="main" id="main">
+        <style>
+          .elem {
+              margin-bottom: 80px;
+          }
+          
+          .elem .row {
+              display: flex;
+          }
+          .col{
+              display: flex;
+          }
+          .button .row {
+              max-width: 588px;
+              margin: 0 0 16px;
+          }
+          
+          .button .row .col {
+              max-width: 160px;
+              width: 100%;
+              margin: 0 10px;
+          }
+          
+          .input .row {
+              max-width: 730px;
+              margin: 0 0 37px;
+          }
+          
+          .input .row .col, .select .row .col {
+              max-width: 350px;
+              width: 100%;
+              margin: 5px;
+          }
+          
+          .checkbox .row {
+              max-width: 350px;
+          }
+          
+          .select .row {
+              max-width: 730px;
+          }
+          
+          .tooltip .icon {
+              color: #212429;
+              fill: transparent;
+              width: 24px;
+              height: 24px;
+          }
+          
+          .tooltip .icon svg {
+              width: 100%;
+              height: 100%;
+          }
+          
+          .links .row {
+              max-width: 500px;
+              margin-bottom: 20px;
+          }
+          
+          .links .row .col {
+              margin-right: 78px;
+          }
+          
+          .nav .row {
+              max-width: 250px;
+              align-items: center;
+          }
+          
+          .block-popup .row {
+              justify-content: flex-start;
+          }
+          
+          .block-popup .row .col {
+              width: auto;
+              max-width: none;
+              margin-left: 0;
+              margin-right: 30px;
+          }
+          .logo{
+              margin-top: 150px;
+          }
+          .logo-img {
+              width: 144px;
+              height: 136px;
+          }
+          .description-block{
+              width: 350px;
+          }
+          .content-block{
+              display: flex;
+              align-items: flex-end;
+          }
+          .square-color{
+              width: 120px;
+              height: 120px;
+              margin-right: 25px;
+              border-radius: 8px;
+          }
+          .rectangle-color{
+              width: 120px;
+              height: 54px;
+          }
+          .rectangle{
+              margin-top: 95px;
+          }
+          .typography-elem-name{
+              display: flex;
+              align-items: center;
+              width: 30px;
+              margin-right: 84px;
+          }
+          .typography-content-item{
+              margin-bottom: 30px ;
+          }
+          
+          
+          
+        </style>
+        <div class="wrapper">
+          <div class="logo elem">
+            <div class="row" style="justify-content:flex-start">
+              <div class="description-block">
+                <h1>Ui Kit</h1>
+              </div>
+              <div class="content-block"><img class="logo-img" src="images/fox-project/logo/Logo.svg"></div>
+            </div>
+          </div>
+          <div class="colors elem">
+            <div class="row">
+              <div class="description-block">
+                <h3>Цвета</h3>
+              </div>
+              <div class="content-block">
+                <div class="col">
+                  <div class="square-color square-orange"></div>
+                </div>
+                <div class="col">
+                  <div class="square-color square-orange-lite"></div>
+                </div>
+                <div class="col">
+                  <div class="square-color square-yellow"></div>
+                </div>
+                <div class="col">
+                  <div class="square-color square-peach"></div>
+                </div>
+                <div class="col">
+                  <div class="square-color square-green"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="description-block"></div>
+              <div class="content-block rectangle">
+                <div class="col">
+                  <div class="rectangle-color rectangle-black"></div>
+                </div>
+                <div class="col">
+                  <div class="rectangle-color rectangle-gray"></div>
+                </div>
+                <div class="col">
+                  <div class="rectangle-color rectangle-medium-grey"></div>
+                </div>
+                <div class="col">
+                  <div class="rectangle-color rectangle-light-grey"></div>
+                </div>
+                <div class="col">
+                  <div class="rectangle-color rectangle-white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="typography elem">
+            <div class="row">
+              <div class="description-block">
+                <h3>Типографика</h3>
+              </div>
+              <div class="typography-content-block">
+                <div class="col typography-content-item">
+                  <div class="typography-elem-name">h1</div>
+                  <div class="typography-elem-item">
+                    <h1>Hayes Valley Studio</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">h2</div>
+                      <div class="typography-elem-item">
+                        <h2>Hayes Valley Studio</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">h3</div>
+                      <div class="typography-elem-item">
+                        <h3>Hayes Valley Studio</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">h4</div>
+                      <div class="typography-elem-item">
+                        <h4>Hayes Valley Studio</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">h5</div>
+                      <div class="typography-elem-item">
+                        <h5>Hayes Valley Studio</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">h6</div>
+                      <div class="typography-elem-item">
+                        <h6>Hayes Valley Studio</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">p b</div>
+                      <div class="typography-elem-item">
+                        <p><b>Hayes Valley Studio</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">p</div>
+                      <div class="typography-elem-item">
+                        <p>Hayes Valley Studio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="typography-content-item">
+                    <div class="col">
+                      <div class="typography-elem-name">small</div>
+                      <div class="typography-elem-item"><small>Hayes Valley Studio</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button elem">
+            <div class="row">
+              <div class="description-block">
+                <h3>Кнопки</h3>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col"><a class="btn btn--blue" href="#">Primary</a></div>
+                  <div class="col"><a class="btn btn--red" href="#">Secondary</a></div>
+                  <div class="col"><a class="btn btn--flat" href="#">Alternate</a></div>
+                </div>
+                <div class="row">
+                  <div class="col"><a class="btn btn--blue" href="#">Primary</a></div>
+                  <div class="col"><a class="btn btn--red" href="#">Secondary</a></div>
+                  <div class="col"><a class="btn btn--flat" href="#">Alternate</a></div>
+                </div>
+                <div class="row">
+                  <div class="col"><a class="btn btn--blue" href="#">Primary</a></div>
+                  <div class="col"><a class="btn btn--red" href="#">Secondary</a></div>
+                  <div class="col"><a class="btn btn--flat" href="#">Alternate</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button elem">
+            <div class="row" style="display: flex;"></div>
+            <div class="row" style="display: flex;">
+              <div class="col"><a class="btn btn--blue disabled" href="#">Primary</a></div>
+              <div class="col"><a class="btn btn--red disabled" href="#">Secondary</a></div>
+              <div class="col"><a class="btn btn--flat disabled" href="#">Alternate</a></div>
+            </div>
+          </div>
+          <div class="input elem">
+            <div class="row">
+              <div class="col">
+                <label class="form-field">
+                  <input class="js-input js-input-mask form-field__input" type="text" data-mask="999 999 999"><span class="form-field__label">Placeholder</span><span class="form-field__icon">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#alert"></use>
+                    </svg></span>
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-field form-field--error">
+                  <input class="js-input form-field__input" type="text" value="Error"><span class="form-field__label">Error</span><span class="form-field__icon">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#alert"></use>
+                    </svg></span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="form-field disabled">
+                  <input class="js-input form-field__input" type="text"><span class="form-field__label">Disabled</span><span class="form-field__icon">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#alert"></use>
+                    </svg></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="select elem">
+            <div class="row">
+              <div class="col">
+                <div class="form-select"><span class="form-select__label">Select</span>
+                  <select class="js-select" name="state">
+                    <option value="MA">Magnetic</option>
+                    <option value="GY">Gravity</option>
+                    <option value="ME">Mechanical Mechanical</option>
+                    <option value="EL">Electronic</option>
+                    <option value="EL">Electronic</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-select"><span class="form-select__label">Select Input</span>
+                  <select class="js-select-input" name="state">
+                    <option value="MA">Magnetic</option>
+                    <option value="GY">Gravity</option>
+                    <option value="ME">Mechanical</option>
+                    <option value="EL">Electronic</option>
+                    <option value="EL">Electronic</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-select disabled"><span class="form-select__label">Select</span>
+                  <select class="js-select" name="state">
+                    <option value="MA">Disabled</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox elem">
+            <div class="row">
+              <div class="col">
+                <label class="form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox"><span class="form-checkbox__checkmark"></span><span class="form-checkbox__text">Default</span>
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-radio">
+                  <input class="form-radio__input" type="radio" name="account"><span class="form-radio__checkmark"></span><span class="form-radio__text">Default</span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="form-checkbox disabled">
+                  <input class="form-checkbox__input" type="checkbox"><span class="form-checkbox__checkmark"></span><span class="form-checkbox__text">Default</span>
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-radio disabled">
+                  <input class="form-radio__input" type="radio" name="account"><span class="form-radio__checkmark"></span><span class="form-radio__text">Default</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tooltip elem">
+            <div class="row">
+              <div class="col">
+                <div class="js-tooltip" title="Helper Text Helper Text Helper Text Text Text">
+                  <div class="icon">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#question"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tag elem">
+            <div class="row">
+              <div class="col">
+                <div class="tag"><a class="tag__item" href="#!"><span>1 of 12</span></a><a class="tag__item" href="#!"><span>Favorite</span></a><a class="tag__item" href="#!"><span>Category</span></a><a class="tag__item tag__item--icon" href="#!">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#share"></use>
+                    </svg><span>SHared</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="links elem">
+            <div class="row">
+              <div class="col"><a class="link link--arrow link--blue" href="#!"><span>Смотреть все</span>
+                  <svg>
+                    <use xlink:href="images/sprites.svg#arrow"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="filters elem">
+            <div class="row">
+              <div class="col">
+                <div class="form-filter">
+                  <div class="form-filter__label">Сортировать</div>
+                  <select class="js-select-filter" name="sort">
+                    <option value="fav">Популярные</option>
+                    <option value="price">По стоимости</option>
+                    <option value="low_price">Цена убывает</option>
+                    <option value="high_price">Цена возрастает</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="element elem">
+            <div class="row">
+              <div class="col">
+                <div class="counter"><span class="counter__item js-sub"></span><span class="counter__item"><span class="js-counter-text">0</span>
+                    <input class="js-counter-input" title="number" hidden value="0"></span><span class="counter__item js-add"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav elem">
+            <div class="row">
+              <div class="col">
+                <div class="close-icon">
+                  <svg>
+                    <use xlink:href="images/sprites.svg#close"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="col">
+                <div class="navigation-arrows">
+                  <div class="navigation-arrows__item">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="navigation-arrows__item">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons elem">
+            <div class="row">
+              <div class="col">
+                <div class="btn-group"><a class="btn-group__item btn-group__item--active" href="#!">Мероприятия 21</a><a class="btn-group__item" href="#!">Мероприятия 22</a><a class="btn-group__item" href="#!">Мероприятия 23</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-block" style="max-width: 730px;">
+            <h2>Пример формы обратной связи</h2>
+            <form class="form js-form" action="#">
+              <div class="form-row">
+                <div class="form-col">
+                  <label class="form-field">
+                    <input class="js-input form-field__input" type="text" name="name" data-msg="" required><span class="form-field__label">Ваше имя</span><span class="form-field__icon"></span>
+                  </label>
+                </div>
+                <div class="form-col">
+                  <label class="form-field">
+                    <input class="js-input js-input-mask form-field__input" type="tel" name="tel" data-mask="+7(999)999-99-99" data-msg="" required><span class="form-field__label">Ваш телефон</span><span class="form-field__icon"></span>
+                  </label>
+                </div>
+                <div class="form-col">
+                  <div class="form-field form-select">
+                    <select class="js-select" name="example" data-placeholder="Выбор значения" data-msg="" required>
+                      <option value=""> </option>
+                      <option value="GY">Gravity</option>
+                      <option value="ME">Mechanical</option>
+                      <option value="EL">Electronic</option>
+                      <option value="EL">Electronic</option>
+                    </select>
+                    <div class="form-field__icon"></div>
+                  </div>
+                </div>
+                <div class="form-line">
+                  <label class="form-field form-field-textarea">
+                    <textarea class="js-input form-field__input form-field__textarea" name="message" data-msg="" required></textarea><span class="form-field__label form-field__label--top">Ваше сообщение</span><span class="form-field__icon"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-bottom">
+                <label class="form-checkbox">
+                  <input class="form-checkbox__input js-agree" type="checkbox"><span class="form-checkbox__checkmark"></span><a class="form-checkbox__text link" href="#" target="_blank">Согласие на обработку данных</a>
+                </label>
+                <button class="submit btn btn--red btn--large" type="submit" disabled="disabled">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <div class="button elem block-popup">
+            <h2>Пример открытия попапов</h2>
+            <div class="row">
+              <div class="col"><a class="btn btn--blue js-popup-link" data-link="feedback">Попап с формой</a></div>
+              <div class="col"><a class="btn btn--blue js-popup-link" data-link="ajax-content" href="ajax-content-example.html" data-href="ajax-content-example.html">Ajax-попап</a></div>
+              <div class="col"><a class="btn btn--blue js-popup-link" data-link="video" data-src="https://www.youtube.com/embed/Euv2ramIrv4?autoplay=1">Попапа с видео</a></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+      <div class="popup js-popup" data-block="feedback">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <div class="popup-block">
+              <div class="form-block" style="max-width: 730px;">
+                <h2>Пример формы обратной связи</h2>
+                <form class="form js-form" action="#">
+                  <div class="form-row">
+                    <div class="form-col">
+                      <label class="form-field">
+                        <input class="js-input form-field__input" type="text" name="name" data-msg="" required><span class="form-field__label">Ваше имя</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                    <div class="form-col">
+                      <label class="form-field">
+                        <input class="js-input js-input-mask form-field__input" type="tel" name="tel" data-mask="+7(999)999-99-99" data-msg="" required><span class="form-field__label">Ваш телефон</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                    <div class="form-col">
+                      <div class="form-field form-select">
+                        <select class="js-select" name="example" data-placeholder="Выбор значения" data-msg="" required>
+                          <option value=""> </option>
+                          <option value="GY">Gravity</option>
+                          <option value="ME">Mechanical</option>
+                          <option value="EL">Electronic</option>
+                          <option value="EL">Electronic</option>
+                        </select>
+                        <div class="form-field__icon"></div>
+                      </div>
+                    </div>
+                    <div class="form-line">
+                      <label class="form-field form-field-textarea">
+                        <textarea class="js-input form-field__input form-field__textarea" name="message" data-msg="" required></textarea><span class="form-field__label form-field__label--top">Ваше сообщение</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-bottom">
+                    <label class="form-checkbox">
+                      <input class="form-checkbox__input js-agree" type="checkbox"><span class="form-checkbox__checkmark"></span><a class="form-checkbox__text link" href="#" target="_blank">Согласие на обработку данных</a>
+                    </label>
+                    <button class="submit btn btn--red btn--large" type="submit" disabled="disabled">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-block="ajax-content">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <div class="js-ajax-wrapper"></div>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-block="video">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <iframe class="js-iframe" src="" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup-thank" id="popup-thank">
+        <div class="popup__wrapper">
+          <div class="popup-thank__content">
+            <div class="popup__close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <h4>Спасибо за заявку. Наши менеджеры свяжутся с вами в ближайшее время.</h4>
+          </div>
+        </div>
+      </div>
+      <script src="js/vendor.js?v=1605287016722"></script>
+      <script src="js/main.js?v=1605287016722"></script>
+    </div>
+  </body>
+</html>
