@@ -23,6 +23,7 @@
 		border: 1px solid $input-bor-color
 		color: $input-color
 		font-size: $input-fs
+		font-weight: 600
 		transition: .3s linear
 		
 		&:focus
@@ -36,10 +37,11 @@
 			border-radius: $input-border-radius-xs
 
 	&__textarea 
-		height: 120px 
+		height: 153px
 		line-height: 1.5	
 		padding-top: 25px 
 		padding-bottom: 25px
+		resize: none
 
 		+bp($point-2)
 			height: 90px	
@@ -121,3 +123,26 @@
 label.error
 	display: none
 			
+.form-field:after
+  position: absolute
+  content: ''
+  width: 70px
+  height: 16px
+  font-size: 12px
+  font-family: $baseFont
+  font-weight: 600
+  color: $gray
+  top: -7px
+  background: $white
+  left: 24px
+  text-align: center
+
+.form-field-surname:after
+  content: 'Фамилия *'
+.form-field-tel:after
+    content: 'Тулефон *'
+.form-field-email:after
+  content: "Email *"
+.form-field-text:after
+  content: " Текст сообщения *"
+  width: 115px

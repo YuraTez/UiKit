@@ -1,4 +1,5 @@
 .btn
+	position: relative
 	display: inline-flex
 	align-items: center
 	justify-content: center
@@ -23,27 +24,67 @@
 	+bp($point-2)
 		border-radius: $btn-group-bor-radius-xs
 	
-	&--blue
-		background-color: $btn-blue
-		
-		&:hover
-			color: $white
-			background-color: $orange-lite
-			
-	&--red
-		background-color: $orange
+	&--orange
+		width: 190px
+		height: 55px
+		background-color: $btn-orange
 
 		&:hover
 			color: $white
-			background: $orange-lite
-			
-	&--flat
-		color: $btn-flat-color
-		border: 1px solid $btn-flat-bor
-		
+			background: $orangeBtnHover
+
+	&--orange-min
+		width: 160px
+		height: 45px
+		background-color: $btn-orange
+
 		&:hover
-			color: $btn-flat-color
-			border: 1px solid $btn-flat-bor-hover
+			color: $white
+			background: $orangeBtnHover
+			
+	&--person
+		width: 230px
+		height: 55px
+		color: $black
+		background: $light-grey
+		border: 3px solid $light-grey
+
+		&:hover
+			color: $black
+			background: $btn-person-hover
+			border: 3px solid $light-grey
+
+	&--person-min
+		width: 180px
+		height: 45px
+		color: $black
+		background: $light-grey
+		border: 3px solid $light-grey
+
+		&:hover
+			color: $black
+			background: $btn-person-hover
+			border: 3px solid $light-grey
+
+	&--reservation
+		width: 172px
+		height: 55px
+		color: $btn-reservation-color
+		border: 1px solid $btn-reservation-bor
+
+		&:hover
+			color: $btn-reservation-color
+			border: 1px solid $btn-reservation-bor-hover
+
+	&--reservation-min
+		width: 150px
+		height: 55px
+		color: $btn-reservation-color
+		border: 1px solid $btn-reservation-bor
+
+		&:hover
+			color: $btn-reservation-color
+			border: 1px solid $btn-reservation-bor-hover
 
 	&--large 
 		height: $btn-h-large
@@ -53,3 +94,79 @@
 			height: $btn-h
 			padding: 0 30px
 		
+.content-button-block .row
+  margin-bottom: 20px
+
+.col .btn
+  margin-right: 45px
+
+.col.person-active
+  position: relative
+
+.content-button-block .col h6
+  display: flex
+  align-items: center
+  width: 100px
+  font-size: 14px
+  color: #E5E5E5
+  margin-right: 40px
+
+.person-hover
+  color: $black
+  background: $btn-person-hover
+  border: 3px solid $light-grey
+
+.orange-hover
+  color: $white
+  background: $orangeBtnHover
+
+.btn--person.person-active:after
+  content: ''
+  position: absolute
+  width: 24px
+  height: 24px
+  left: 40px
+  top: 16px
+  background-image: url("../images/person.png")
+  background-size: contain
+
+.btn--person.person-active:before
+  content: ''
+  position: absolute
+  width: 12px
+  height: 12px
+  right: 55px
+  top: 22px
+  background-image: url("../images/vector.svg")
+  background-repeat: no-repeat
+  background-size: contain
+  z-index: 10
+
+.content-button-block-mini
+  margin-top: 65px
+
+.content-button-block-mini .btn--orange-min
+  width: 160px
+  height: 45px
+
+.btn--person-min.person-active:after
+  content: ''
+  position: absolute
+  width: 24px
+  height: 24px
+  left: 20px
+  top: 7px
+  background-image: url("../images/person.png")
+  background-size: contain
+
+.btn--person-min.person-active:before
+  content: ''
+  position: absolute
+  width: 12px
+  height: 12px
+  right: 27px
+  top: 16px
+  background-image: url("../images/vector.svg")
+  background-repeat: no-repeat
+  background-size: contain
+  z-index: 10

@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.sass"],"names":[],"mappings":"AAAA,SACE,gBAAiB,CAAG,AAEtB,MACE,gBAAiB,CAAG,AAEtB,SACE,oBAAA,AAAa,qBAAb,AAAa,iBAAb,AAAa,oBAAb,AAAa,YAAA,CAAG,AAElB,cACG,cAAe,CAAG","file":"test.css","sourcesContent":[".wrapper {\n  max-width: 1260px; }\n\n.form {\n  max-width: 1110px; }\n\n.nav-bar {\n  display: flex; }\n\n.nav-bar-link {\n   font-size: 15px; }\n"]}
