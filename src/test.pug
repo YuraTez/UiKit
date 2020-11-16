@@ -4,38 +4,92 @@ append vars
     -title ='Тест'
 
 block content
-    .form-block
-        h2 Пример формы обратной связи
-        form.form.js-form(action='#')
-            .form-row
-                .form-col
-                    label.form-field
-                        input.js-input.form-field__input(type='text', name="name", data-msg="" required)
-                        span.form-field__label Ваше имя
-                        span.form-field__icon
-                .form-col
-                    label.form-field
-                        input.js-input.js-input-mask.form-field__input(type='tel', name="tel", data-mask="+7(999)999-99-99" data-msg="" required)
-                        span.form-field__label Ваш телефон
-                        span.form-field__icon
-                .form-col
-                    .form-field.form-select
-                        select.js-select(name='example' data-placeholder="Выбор значения" data-msg="" required)
-                            option(value='')
-                            option(value='GY') Gravity
-                            option(value='ME') Mechanical
-                            option(value='EL') Electronic
-                            option(value='EL') Electronic
-                        .form-field__icon
-                .form-line
-                    label.form-field.form-field-textarea
-                        textarea.js-input.form-field__input.form-field__textarea(name="message" data-msg="" required)
-                        span.form-field__label.form-field__label--top Ваше сообщение
-                        span.form-field__icon
+    .wrapper
+        .live-chat-block
+            .nav-bar
+                a.nav-bar-link(href="#") Главная
+                a.nav-bar-link(href="#") События
+                a.nav-bar-link(href="#") Open Day. Развитие бизнеса
+            h1.live-chat-title Live chat support live chat implementation and best practices
+            .live-chat-bar-content-img
+                img(src="images/fox-project/live-chat-img.png")
+            p.live-chat-description.wrapper-text Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц.
+            h2.wrapper-text.live-chat-subtitle
+                | Live chat is a powerful tool,
+                a.link-title(href="#") but only when
+                |  it’s used
+            p.wrapper-text.live-chat-subdescription
+                | This feeling of trust only increases if you use
+                a(href="#")  live chat as part
+                |  of a full customer
+                a(href="#")  support experience
+                | . If you’re checking in with customers via email, keeping your phone lines open and taking calls, and being present on social media, you’re showing them.
+            h4.wrapper-text.live-chat-title-recommendation 4 best practices for a successful live chat support 4 best practices for a successful live chat support experience
+                p.wrapper-text.live-chat-subtitle-recommendation Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов.
+            .live-chat-block-services
+                .block-services-item
+                    img(src='images/fox-project/fitnes.png')
+                    h5.block-services-item-title Фитнес
+                    p.block-services-item-subtitle Гостям «Лисьей норы» мы предлагаем посетить наш фитнес-клуб, в котором можно с максимальной пользой и удовольствием провести время. К вашим услугам – современная кардиозона, тренажёры, зал аэробики и финская сауна.
+                .block-services-item
+                    img(src='images/fox-project/rent.png')
+                    h5.block-services-item-title Прогулочные маршруты
+                    p.block-services-item-subtitle Красочные пешие маршруты, прокат велосипедов, зимой – специальная лыжная трасса.
+                .block-services-item
+                    img(src='images/fox-project/walk.png')
+                    h5.block-services-item-title Прокат инвентаря
+                    p.block-services-item-subtitle Велосипеды, коньки и лыжи, рыболовные снасти, снаряжения для стрельбы и прогулки на лодке – можно не только привезти с собой, но и взять на прокат на ресепшене в Лисьей норе.
+                .block-services-item-big
+                    img(src='images/fox-project/fishing.png')
+                    .block-services-item-big-description
+                        h5.block-services-item-title Рыбалка
+                        p.block-services-item-subtitle Проживающие гости и обладатели Foxcard могут круглый год наслаждаться рыбалкой.
+                .block-services-item-big
+                    img(src='images/fox-project/playground.png')
+                    .block-services-item-big-description
+                        h5.block-services-item-title Детские площадки
+                        p.block-services-item-subtitle «Лисья нора» это замечательное место для семейного досуга. У нас созданы максимально комфортные условия для тех, кто приезжает на отдых с детьми.
+        .form-block-wrapper
+            .form-block
+                h5.form-block-title Формы обратной связи
+                form.form.js-form(action='#')
+                    .form-row
+                        .form-col
+                            label.form-field.form-field-surname
+                                input.js-input.form-field__input(type='text', name="name", data-msg="" required)
+                                span.form-field__label Ваше имя
+                                span.form-field__icon
+                        .form-col
+                            label.form-field.form-field-tel
+                                input.js-input.js-input-mask.form-field__input(type='tel', name="tel", data-mask="+7(999)999-99-99" data-msg="" required)
+                                span.form-field__label Ваш телефон
+                                span.form-field__icon
+                        .form-col
+                            .form-field.form-select.form-field-email
+                                label.form-field.form-field-tel
+                                    input.js-input.js-input-mask.form-field__input(type='email', name="email", data-mask="" data-msg="" required)
+                                    span.form-field__label Ваш Email:
+                                    span.form-field__icon
+                                .form-field__icon
+                        .form-line
+                            label.form-field.form-field-textarea.form-field-text
+                                textarea.js-input.form-field__input.form-field__textarea(name="message" data-msg="" required)
+                                span.form-field__label.form-field__label--top Ваше сообщение
+                                span.form-field__icon
 
-            .form-bottom
-                label.form-checkbox
-                    input.form-checkbox__input.js-agree(type='checkbox')
-                    span.form-checkbox__checkmark
-                    a.form-checkbox__text.link(href="#" target="_blank") Согласие на обработку данных
-                button.submit.btn.btn--red.btn--large(type="submit" disabled='disabled') Отправить
+                    .form-bottom
+                        label.form-checkbox
+                            input.form-checkbox__input.js-agree(type='checkbox')
+                            span.form-checkbox__checkmark
+                            .form-checkbox-text
+                                | Ознакомлен с политикой и выражаю согласие на
+                                a(href="#")  Обработку
+                                |  моих персональных данных. Ознакомлен с
+                                a(href="#")  Правилами
+                                |  бронирования и
+                                a(href="#")  Правилами
+                                |  нахождения на территории
+                        button.submit.btn.btn--orange.btn--large(type="submit" disabled='disabled') Отправить
+        .idea-block-wrapper
+            h4.idea-block-wrapper-title H4. Идейные соображения высшего порядка
+            p.idea-block-wrapper-subtitle.wrapper-text With live chat software, you can measure website traffic data or draw from what you already know about your products to decide where your support is most useful. A few ideas:
