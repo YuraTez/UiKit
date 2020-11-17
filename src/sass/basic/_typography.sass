@@ -4,7 +4,7 @@ h1
   font-weight: bold
   letter-spacing: 0.01em
   color: $black
-  //margin: round($baseGutter*3) 0 round($baseGutter*1.1)
+  margin: round($baseGutter*0.3) 0 round($baseGutter*0.66)
 	
   @include bp($point-3)
 	  margin-top: round($baseGutter*2.1)
@@ -16,19 +16,19 @@ h2
   font-weight: bold
   letter-spacing: 0.01em
   color: $black
-  //margin: round($baseGutter*1.2) 0 round($baseGutter*1.2)
+  margin: round($baseGutter*1) 0 round($baseGutter*0.69)
 	
 h3
   font-size: $h3-fs
   line-height: $h3-lh
   font-weight: bold
   color: $black
-  //margin: round($baseGutter*1.5) 0 round($baseGutter*0.6)
+  margin: round($baseGutter*1.5) 0 round($baseGutter*0.6)
 
 h4
   font-size: $h4-fs
   line-height: $h4-lh
-  //margin: round($baseGutter*1.5) 0 round($baseGutter*0.6)
+  margin: round($baseGutter*1) 0 round($baseGutter*0.46)
 
 h5
   font-size: $h5-fs
@@ -36,20 +36,20 @@ h5
   font-weight: bold
   letter-spacing: 0.01em
   color: $black
-  //margin: round($baseGutter*1.2) 0 round($baseGutter*0.6)
+  margin: round($baseGutter*0.46) 0 round($baseGutter*0.25)
 	
 h6
   font-size: $h6-fs
   line-height: $h6-lh
   font-weight: 500
   color: $black
-  //margin: round($baseGutter*1.2) 0 round($baseGutter*0.6)
+  margin: round($baseGutter*1.2) 0 round($baseGutter*0.6)
 	
 p
   font-size: $p-fs
   line-height: $p-lh
   font-weight: 500
-  margin: round($baseGutter/0.9) 0
+  margin: round($baseGutter*0.46) 0
 	
   &+img
 	  margin: round($baseGutter*0.2) 0 0
@@ -70,7 +70,7 @@ img
 	&+p,
 	&+ul,
 	&+ol
-		margin-top: round($baseGutter*1.3)
+		margin-top: round($baseGutter*0.46)
 	
 	&+small
 		display: block
@@ -86,7 +86,7 @@ small
 blockquote
 	font-size: $blockquote-fs
 	line-height: $blockquote-lh
-	color: #4263EB
+	color: $orange
 	text-align: center
 	margin: round($baseGutter*2) round($baseGutter*1.3) round($baseGutter*2)
 	font-weight: normal
@@ -124,7 +124,7 @@ ol
 			line-height: $p-lh
 			color: $list-item-color
 			
-/*ul
+ul
 	li
 		&:after
 			content: ''
@@ -187,32 +187,32 @@ ul,ol,blockquote
 	h1
 		font-size: $h1-fs-480
 		line-height: $h1-lh-480
-		//margin: $baseGutter 0
+		margin: $baseGutter 0
 		
 	h2
 		font-size: $h2-fs-480
 		line-height: $h2-lh-480
-		//margin: $baseGutter 0 round($baseGutter*0.6)
+		margin: $baseGutter 0 round($baseGutter*0.6)
 	
 	h3
 		font-size: $h3-fs-480
 		line-height: $h3-lh-480
-		//margin: $baseGutter 0 round($baseGutter*0.6)
+		margin: $baseGutter 0 round($baseGutter*0.6)
 	
 	h4
 		font-size: $h4-fs-480
 		line-height: $h4-lh-480
-		//margin: $baseGutter 0 round($baseGutter*0.6)
+		margin: $baseGutter 0 round($baseGutter*0.6)
 		
 	h5
 		font-size: $h5-fs-480
 		line-height: $h5-lh-480
-		//margin: $baseGutter 0 round($baseGutter*0.6)
+		margin: $baseGutter 0 round($baseGutter*0.6)
 		
 	h6
 		font-size: $h6-fs-480
 		line-height: $h6-lh-480
-		//margin: $baseGutter 0 round($baseGutter*0.6)
+		margin: $baseGutter 0 round($baseGutter*0.6)
 		
 	p
 		font-size: $p-fs-480
@@ -271,3 +271,8 @@ ul,ol,blockquote
 	.table-wrap
 		margin: round($baseGutter*1.14) 0
 
+h2,h3,h4,h5,h6,p
+  max-width: 1140px
+
+img
+  margin: round($baseGutter*0.69) 0

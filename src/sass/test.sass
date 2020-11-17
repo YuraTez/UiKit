@@ -9,31 +9,25 @@
   display: flex
   padding-top: 80px
 
-.nav-bar-link
+.nav-bar a
   font-family: $baseFont
   font-weight: 500
   font-size: 15px
   color: $gray
 
-.nav-bar-link:not(:last-child):after
+.nav-bar a:not(:last-child):after
   content: "/"
   color: $gray
   padding: 15px
 
-.live-chat-title
-  margin: 21px 0 88px 0
-
-.link-title
+h2 a
   color: $orange
 
-.live-chat-subdescription
-  padding: 45px 0 65px 0
 
 .live-chat-title-recommendation
   margin-top: 65px
 
-.live-chat-subtitle-recommendation
-  margin: 30px 0 82px 0
+
 
 
 .live-chat-block-services
@@ -44,17 +38,26 @@
 .block-services-item
   max-width: 400px
 
+.block-services-item img
+  margin-bottom: 0
+
+.block-services-item  p,
+.block-services-item-big-description p
+  font-size: 16px
+  line-height: 140%
+  font-weight: 500
+  color: $gray
+
+.block-services-item p
+  margin-top: 16px
 
 .block-services-item-title
   padding: 30px 0 16px
   margin: 0
 
-.block-services-item-subtitle
-  color: $gray
-  font-size: 16px
-
 .block-services-item-big img
   height: 340px
+  margin-bottom: 0
 
 .block-services-item-big
   width: 609px
@@ -62,21 +65,15 @@
 .block-services-item-big-description
   display: flex
   justify-content: space-between
-  padding-top: 38px
+  margin-top: 8px
 
-.block-services-item-big .block-services-item-title
-  max-width: 200px
-  margin: 0
-  padding: 0
-
-.block-services-item-big .block-services-item-subtitle
-  max-width: 400px
-  margin: 0
-  padding: 0
+.block-services-item-big-description p
+  width: 70%
+  margin-top: 30px
 
 .form-block-wrapper
   border: 7px solid $very-light-grey
-  margin: 124px 0 114px
+  margin: 94px 0 114px
 
 .form-block
   max-width: 1110px
@@ -85,15 +82,17 @@
 
 .form-block-title
   margin: 65px 0 42px
+
 .form-checkbox-text
   width: 586px
   font-size: 12px
   font-weight: 600
+  line-height: 130%
   color: $gray
+
 .idea-block-wrapper-title
   font-weight: bold
   letter-spacing: -0.01em
 
-.idea-block-wrapper-subtitle
-  margin: 30px 0 24px
+.idea-block-wrapper p
   font-weight: 500
