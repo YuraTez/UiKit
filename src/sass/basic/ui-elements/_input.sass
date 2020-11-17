@@ -3,7 +3,10 @@
 	display: block
 	width: 100%
 	margin-bottom: 30px
-	
+    font-weight: 600
+	line-height: 110%
+	color: #C4C4C4
+
 	&[disabled],
 	&.disabled
 		opacity: .5
@@ -91,7 +94,8 @@
 	&--focused
 		.form-field__label,
 		.select2-selection__placeholder
-			transform: translate(0,-8px) scale(0.7)
+			display: none
+			//transform: translate(0,-8px) scale(0.7)
 		
 	&--error
 		.form-field__label,
